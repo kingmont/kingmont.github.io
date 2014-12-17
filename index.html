@@ -22,6 +22,7 @@ body {
 	top: 0px;
 	height: 173px;
 	width: 955px;
+	z-index: 100;
 }
 
 .footer {
@@ -29,6 +30,7 @@ body {
 	bottom: 0px;
 	height: 50px;
 	width: 955px;
+	z-index: 100;
 }
 
 .main {
@@ -57,6 +59,25 @@ body {
 
 .map {
 	float: right;
+}
+
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.parallax-layer {
+	position: relative;
+	height: 100vh;
+}
+
+.parallax-section {
+	position: absolute;
+	//top: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 
@@ -108,136 +129,146 @@ body {
 	  </div>
 	</div>
 
-  <div class="main">
-    <div class="home">
-      <h2>The Property Tax Experts</h2>
-      <p>
-        Kingmont Consulting is a full service property tax consulting firm that specializes in providing taxpayers of commercial, industrial, multi-residential and special purpose properties with full-range property assessment and tax management services.
-      </p>
-      <h2>Mission</h2>
-      <p>
-        &ldquo;Providing our valued customers with small firm customer service and familiarity, in partnership with large firm experience and expertise&rdquo;
-      </p>
-      <h2>Kingmont Consulting Advantage</h2>
-      <p>
-        Kingmont's resolution is to ensure that any property tax savings achieved on behalf of our clients are not simply replaced by the consulting and litigation costs incurred to achieve the tax savings strived for, which presently seems to be the case throughout our industry these days.
-      </p>
-      <p>
-        Unlike our competitors, we do NOT pay our staff based on the quantity of their billings. Rather, we are interested in sustaining a long-term relationship with our clients, which we believe in contingent upon their receipt of fees that are both justified, and at the same time, cost effective.
-      </p>
-      <h2>Experience</h2>
-      <p>
-        Kingmont principles and staff have well over a century of combined experience in the ever changing legislative landscape of &ldquo;Current Value Assessment&rdquo;. On the tax calculation side, our team has lived and flourished surrounded by the fluid nature of the property taxation rules which continue to follow the many incarnations of the Municipal Act.
-      </p>
-    </div>
-
-    <div class="about">
-      <h2>About Us</h2>
-      <p>
-		    Kingmont founders, Edward Ford-King and David Montgomery, had attained well over 40 years of valuable experience in their respective  fields of assessment and property taxations at the Ministry of Finance and at the regional municipal level before joining forces and establishing their own firm in 1988. Today, Kingmont has a team of just under 10 associates with well over a century of combined industry experience; providing their valued customers with small firm customer service and familiarity, in partnership with large firm experience and expertise, allowing the company to become one of the most respected property tax consulting firms in Canada today.
-		  </p>
-      <p>
-	        Kingmont's growth strategy over the years has been simple; bring in only experienced and highly dedicated associates whom share their own core values and work ethics. This simple stratagem has allowed Kingmont to grow almost exclusively through word of mouth recommendations from their existing client base. Further, the company's success can be directly attributed to the firm's commitment of providing an exceptional customer service experience for their clients.
-		  </p>
-      <p>
-	        Kingmont has made it their business to keep abreast of the changes in legislation and the administration of municipal taxations. All of their associates, including the principles are regularly involved in seminars and industry sponsored events; additionally, are required to attend yearly Continuing Professional Development classes provided by the Law Society of Upper Canada.
-		  </p>
-    </div>
-
-		<div class="services">
-			<h2>Services</h2>
-			<p>Kingmont provides consultation and advocacy services to owners and users (taxpayers) of commercial, industrial, multi-residential and  special purpose properties with full-range property assessment and tax management services.</p>
-			<h2>Some of Our Services Include:</h2>
-			<ul>
-				<li>Assessment Appeals and Review</li>
-				<li>Facilitating the assessment review period</li>
-				<li>Tax Management and Budget Estimates</li>
-				<li>Tax Apportionments and Review</li>
-				<li>Vacancy Rebate Applications and Review</li>
-				<li>New Construction – Reviews and Applications</li>
-				<li>Municipal Act Applications and Appeals</li>
-				<li>Legal Issues and Litigation Support</li>
-				<li>Lease and Cost Analysis</li>
-				<li>Absorption Analysis</li>
-				<li>Portfolio Analysis</li>
-				<li>Conduct negotiations with assessor</li>
-			</ul>
-			<p>Property Assessments received by taxpayers should be reviewed every year, both for correctness and for an equitable treatment of  taxes.</p>
-			<p>Our experts would be pleased to hear from you with any inquires you may have regarding your property tax burden, upcoming hearings or recently received Assessment Notices.</p>
-			<h2>Property Assessment Overview</h2>
-			<h2>Market Value Assessment:</h2>
-			<p>A market value based assessment does NOT necessarily identify a property's individual sale price or potential sale price. Rather, it attempts to provide a &lsquo;fair actual&rsquo; or average value based on several factors including similar properties which have sold.</p>
-			<p>Further, your current assessment notice does not reflect today's market trends; it is instead based upon market conditions one year prior to today. Any changes (increases or decreases) in property values since then will NOT be reflected on the current assessment. See &lsquo;valuation date&rsquo; below.</p>
-			<h2>Valuation</h2>
-			<p>Legislation requires the assessment process to comply with the &ldquo;valuation date&rdquo;</p>
-			<h2>Valuation date</h2>
-			<p>The valuation date ensures all properties are valued as of the same date. The valuation date or the 2011 tax year is July 1, 2010. This means the assessment value on the 2011 Assessment and Tax Notice is an estimate of value as of July 1, 2010.</p>
-			<h2>Appealing your assessment</h2>
-			<p>You cannot appeal your property taxes, nor can you request a review of your property taxes. If you feel an error has been made, you can appeal the property assessment value (there may be an appeal fee involved). You must explain why you think your assessment is incorrect and you must be prepared to provide supporting documentation and evidence to support your claim. In other words it is insufficient to simply state &ldquo;my assessment is too high&rdquo;.</p>
-			<h2>Contact</h2>
-			<p>If you have questions or concerns about the assessment process or the value that the assessor has placed on your property, you can contact your municipality who will in turn relay the message to the assessor.</p>
+  <div class="parallax">
+    <div class="home parallax-layer">
+			<div class="parallax-section">
+	      <h2>The Property Tax Experts</h2>
+	      <p>
+	        Kingmont Consulting is a full service property tax consulting firm that specializes in providing taxpayers of commercial, industrial, multi-residential and special purpose properties with full-range property assessment and tax management services.
+	      </p>
+	      <h2>Mission</h2>
+	      <p>
+	        &ldquo;Providing our valued customers with small firm customer service and familiarity, in partnership with large firm experience and expertise&rdquo;
+	      </p>
+	      <h2>Kingmont Consulting Advantage</h2>
+	      <p>
+	        Kingmont's resolution is to ensure that any property tax savings achieved on behalf of our clients are not simply replaced by the consulting and litigation costs incurred to achieve the tax savings strived for, which presently seems to be the case throughout our industry these days.
+	      </p>
+	      <p>
+	        Unlike our competitors, we do NOT pay our staff based on the quantity of their billings. Rather, we are interested in sustaining a long-term relationship with our clients, which we believe in contingent upon their receipt of fees that are both justified, and at the same time, cost effective.
+	      </p>
+	      <h2>Experience</h2>
+	      <p>
+	        Kingmont principles and staff have well over a century of combined experience in the ever changing legislative landscape of &ldquo;Current Value Assessment&rdquo;. On the tax calculation side, our team has lived and flourished surrounded by the fluid nature of the property taxation rules which continue to follow the many incarnations of the Municipal Act.
+	      </p>
+			</div>
 		</div>
 
-    <div class="team">
-			<h2>Meet the Team</h2>
-			<p>Chief Advisor, Associate - Edward Ford-King</p>
-			<p>Associate - David Montgomery</p>
-			<p>President, CEO - Robert Ford-King, B.A.(Hons.)</p>
-			<p>Vice President, CFO - Tracey Coleman, B.A.(Hons.)</p>
-			<p>Associate - Peter Senior, B.S</p>
-			<p>Raquel Henry</p>
-			<p>Bryan Sullivan</p>
+    <div class="about parallax-layer">
+			<div class="parallax-section">
+				<h2>About Us</h2>
+	      <p>
+			    Kingmont founders, Edward Ford-King and David Montgomery, had attained well over 40 years of valuable experience in their respective  fields of assessment and property taxations at the Ministry of Finance and at the regional municipal level before joining forces and establishing their own firm in 1988. Today, Kingmont has a team of just under 10 associates with well over a century of combined industry experience; providing their valued customers with small firm customer service and familiarity, in partnership with large firm experience and expertise, allowing the company to become one of the most respected property tax consulting firms in Canada today.
+			  </p>
+	      <p>
+		        Kingmont's growth strategy over the years has been simple; bring in only experienced and highly dedicated associates whom share their own core values and work ethics. This simple stratagem has allowed Kingmont to grow almost exclusively through word of mouth recommendations from their existing client base. Further, the company's success can be directly attributed to the firm's commitment of providing an exceptional customer service experience for their clients.
+			  </p>
+	      <p>
+		        Kingmont has made it their business to keep abreast of the changes in legislation and the administration of municipal taxations. All of their associates, including the principles are regularly involved in seminars and industry sponsored events; additionally, are required to attend yearly Continuing Professional Development classes provided by the Law Society of Upper Canada.
+			  </p>
+	    </div>
 		</div>
 
-		<div class="contact">
-			<h2>Contact Us</h2>
-			<!--div class="map">
-				<iframe src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=15+regan+road+unit+11&amp;aq=&amp;sll=43.7010032,-79.8004514&amp;sspn=0.008419,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=15+Regan+Rd,+Brampton,+Peel+Regional+Municipality,+Ontario+L7A+1B2&amp;t=m&amp;ll=43.7010032,-79.8004514&amp;spn=0.008423,0.021136&amp;z=14&amp;iwloc=A&amp;output=embed" width="425" marginwidth="0" height="350" marginheight="0" scrolling="no" frameborder="0" class="map"></iframe>
-		    <span https://www.google.ca/maps/place/15+Regan+Rd+%2311,+Brampton,+ON+L7A+1B2/@43.7010032,-79.8004514,17z/data=!3m1!4b1!4m2!3m1!1s0x882b143943ac2c9f:0x2605d1b1b21e899?hl=en /span>
-			</div-->
-			<p>
-				Head Office:<br/>
-				15 Regan Rd,<br/>
-				Unit 11,<br/>
-				Brampton ON<br/>
-				L7A 1E3
-			</p>
-			<p>
-				General Inquiry<br/>
-				Email: info@kingmontconsulting.com<br/>
-				Phone: 905-840-7277<br/>
-				Fax: 905-840-2520
-			</p>
-			<p>
-				Robert Ford-King<br/>
-			  Email: <a href="mailto:rford-king@kingmontconsulting.com">rford-king@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 23
-			</p>
-			<p>
-				Edward Ford-King<br/>
-				Email: <a href="mailto:eford-king@kingmontconsulting.com">eford-king@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 22
-			</p>
-			<p>
-				Tracey Coleman<br/>
-				Email: <a href="mailto:tcoleman@kingmontconsulting.com">tcoleman@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 24
-			</p>
-			<p>
-				David Montgomery<br/>
-				Email: <a href="mailto:dmontgomery@kingmontconsulting.com">dmontgomery@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 28
-			</p>
-			<p>
-				Raquel Henry<br/>
-				Email: <a href="mailto:rhenry@kingmontconsulting.com">rhenry@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 21
-			</p>
-			<p>
-				Bryan Sullivan<br/>
-				Email: <a href="mailto:bsullivan@kingmontconsulting.com">bsullivan@kingmontconsulting.com</a><br/>
-				Phone: 905-840-7277 EXT 26
-			</p>
+		<div class="services parallax-layer">
+			<div class="parallax-section">
+				<h2>Services</h2>
+				<p>Kingmont provides consultation and advocacy services to owners and users (taxpayers) of commercial, industrial, multi-residential and  special purpose properties with full-range property assessment and tax management services.</p>
+				<h2>Some of Our Services Include:</h2>
+				<ul>
+					<li>Assessment Appeals and Review</li>
+					<li>Facilitating the assessment review period</li>
+					<li>Tax Management and Budget Estimates</li>
+					<li>Tax Apportionments and Review</li>
+					<li>Vacancy Rebate Applications and Review</li>
+					<li>New Construction – Reviews and Applications</li>
+					<li>Municipal Act Applications and Appeals</li>
+					<li>Legal Issues and Litigation Support</li>
+					<li>Lease and Cost Analysis</li>
+					<li>Absorption Analysis</li>
+					<li>Portfolio Analysis</li>
+					<li>Conduct negotiations with assessor</li>
+				</ul>
+				<p>Property Assessments received by taxpayers should be reviewed every year, both for correctness and for an equitable treatment of  taxes.</p>
+				<p>Our experts would be pleased to hear from you with any inquires you may have regarding your property tax burden, upcoming hearings or recently received Assessment Notices.</p>
+				<h2>Property Assessment Overview</h2>
+				<h2>Market Value Assessment:</h2>
+				<p>A market value based assessment does NOT necessarily identify a property's individual sale price or potential sale price. Rather, it attempts to provide a &lsquo;fair actual&rsquo; or average value based on several factors including similar properties which have sold.</p>
+				<p>Further, your current assessment notice does not reflect today's market trends; it is instead based upon market conditions one year prior to today. Any changes (increases or decreases) in property values since then will NOT be reflected on the current assessment. See &lsquo;valuation date&rsquo; below.</p>
+				<h2>Valuation</h2>
+				<p>Legislation requires the assessment process to comply with the &ldquo;valuation date&rdquo;</p>
+				<h2>Valuation date</h2>
+				<p>The valuation date ensures all properties are valued as of the same date. The valuation date or the 2011 tax year is July 1, 2010. This means the assessment value on the 2011 Assessment and Tax Notice is an estimate of value as of July 1, 2010.</p>
+				<h2>Appealing your assessment</h2>
+				<p>You cannot appeal your property taxes, nor can you request a review of your property taxes. If you feel an error has been made, you can appeal the property assessment value (there may be an appeal fee involved). You must explain why you think your assessment is incorrect and you must be prepared to provide supporting documentation and evidence to support your claim. In other words it is insufficient to simply state &ldquo;my assessment is too high&rdquo;.</p>
+				<h2>Contact</h2>
+				<p>If you have questions or concerns about the assessment process or the value that the assessor has placed on your property, you can contact your municipality who will in turn relay the message to the assessor.</p>
+			</div>
+		</div>
+
+    <div class="team parallax-layer">
+			<div class="parallax-section">
+				<h2>Meet the Team</h2>
+				<p>Chief Advisor, Associate - Edward Ford-King</p>
+				<p>Associate - David Montgomery</p>
+				<p>President, CEO - Robert Ford-King, B.A.(Hons.)</p>
+				<p>Vice President, CFO - Tracey Coleman, B.A.(Hons.)</p>
+				<p>Associate - Peter Senior, B.S</p>
+				<p>Raquel Henry</p>
+				<p>Bryan Sullivan</p>
+			</div>
+		</div>
+
+		<div class="contact parallax-layer">
+			<div class="parallax-section">
+				<h2>Contact Us</h2>
+				<!--div class="map">
+					<iframe src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=15+regan+road+unit+11&amp;aq=&amp;sll=43.7010032,-79.8004514&amp;sspn=0.008419,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=15+Regan+Rd,+Brampton,+Peel+Regional+Municipality,+Ontario+L7A+1B2&amp;t=m&amp;ll=43.7010032,-79.8004514&amp;spn=0.008423,0.021136&amp;z=14&amp;iwloc=A&amp;output=embed" width="425" marginwidth="0" height="350" marginheight="0" scrolling="no" frameborder="0" class="map"></iframe>
+			    <span https://www.google.ca/maps/place/15+Regan+Rd+%2311,+Brampton,+ON+L7A+1B2/@43.7010032,-79.8004514,17z/data=!3m1!4b1!4m2!3m1!1s0x882b143943ac2c9f:0x2605d1b1b21e899?hl=en /span>
+				</div-->
+				<p>
+					Head Office:<br/>
+					15 Regan Rd,<br/>
+					Unit 11,<br/>
+					Brampton ON<br/>
+					L7A 1E3
+				</p>
+				<p>
+					General Inquiry<br/>
+					Email: info@kingmontconsulting.com<br/>
+					Phone: 905-840-7277<br/>
+					Fax: 905-840-2520
+				</p>
+				<p>
+					Robert Ford-King<br/>
+				  Email: <a href="mailto:rford-king@kingmontconsulting.com">rford-king@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 23
+				</p>
+				<p>
+					Edward Ford-King<br/>
+					Email: <a href="mailto:eford-king@kingmontconsulting.com">eford-king@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 22
+				</p>
+				<p>
+					Tracey Coleman<br/>
+					Email: <a href="mailto:tcoleman@kingmontconsulting.com">tcoleman@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 24
+				</p>
+				<p>
+					David Montgomery<br/>
+					Email: <a href="mailto:dmontgomery@kingmontconsulting.com">dmontgomery@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 28
+				</p>
+				<p>
+					Raquel Henry<br/>
+					Email: <a href="mailto:rhenry@kingmontconsulting.com">rhenry@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 21
+				</p>
+				<p>
+					Bryan Sullivan<br/>
+					Email: <a href="mailto:bsullivan@kingmontconsulting.com">bsullivan@kingmontconsulting.com</a><br/>
+					Phone: 905-840-7277 EXT 26
+				</p>
+			</div>
 		</div>
 
   </div>
