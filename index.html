@@ -15,6 +15,7 @@ body {
 	width: 955px;
 	margin-right: auto;
 	margin-left: auto;
+	overflow-y: hidden;
 }
 
 .header {
@@ -75,9 +76,11 @@ body {
 
 .parallax-section {
 	position: absolute;
-	//top: 50%;
-	margin-top: auto;
-	margin-bottom: auto;
+	//top: 200px;
+}
+
+.anchor-spacer {
+	height: 200px;
 }
 
 
@@ -121,18 +124,19 @@ body {
 	    <img src="images/Header.jpg" width="955" height="123" align="absmiddle" />
 	  </div>
 	  <div class="menu">
-	    <div class="menuitem"><a class="btn" href="index.html">Home</a></div>
-	    <div class="menuitem"><a class="btn" href="About.html">About Us</a></div>
-	    <div class="menuitem"><a class="btn" href="services.html">Services</a></div>
-	    <div class="menuitem"><a class="btn" href="Team.html">Meet the Team</a></div>
-	    <div class="menuitem"><a class="btn" href="contact.html">Contact Us</a></div>
+	    <div class="menuitem"><a class="btn" href="#home">Home</a></div>
+	    <div class="menuitem"><a class="btn" href="#about">About Us</a></div>
+	    <div class="menuitem"><a class="btn" href="#services">Services</a></div>
+	    <div class="menuitem"><a class="btn" href="#team">Meet the Team</a></div>
+	    <div class="menuitem"><a class="btn" href="#contact">Contact Us</a></div>
 	  </div>
 	</div>
 
   <div class="parallax">
     <div class="home parallax-layer">
 			<div class="parallax-section">
-	      <h2>The Property Tax Experts</h2>
+				<a name="home"><div class="anchor-spacer"></div></a>
+				<h2>The Property Tax Experts</h2>
 	      <p>
 	        Kingmont Consulting is a full service property tax consulting firm that specializes in providing taxpayers of commercial, industrial, multi-residential and special purpose properties with full-range property assessment and tax management services.
 	      </p>
@@ -156,6 +160,7 @@ body {
 
     <div class="about parallax-layer">
 			<div class="parallax-section">
+				<a name="about"><div class="anchor-spacer"></div></a>
 				<h2>About Us</h2>
 	      <p>
 			    Kingmont founders, Edward Ford-King and David Montgomery, had attained well over 40 years of valuable experience in their respective  fields of assessment and property taxations at the Ministry of Finance and at the regional municipal level before joining forces and establishing their own firm in 1988. Today, Kingmont has a team of just under 10 associates with well over a century of combined industry experience; providing their valued customers with small firm customer service and familiarity, in partnership with large firm experience and expertise, allowing the company to become one of the most respected property tax consulting firms in Canada today.
@@ -171,6 +176,7 @@ body {
 
 		<div class="services parallax-layer">
 			<div class="parallax-section">
+				<a name="services"><div class="anchor-spacer"></div></a>
 				<h2>Services</h2>
 				<p>Kingmont provides consultation and advocacy services to owners and users (taxpayers) of commercial, industrial, multi-residential and  special purpose properties with full-range property assessment and tax management services.</p>
 				<h2>Some of Our Services Include:</h2>
@@ -207,6 +213,7 @@ body {
 
     <div class="team parallax-layer">
 			<div class="parallax-section">
+				<a name="team"><div class="anchor-spacer"></div></a>
 				<h2>Meet the Team</h2>
 				<p>Chief Advisor, Associate - Edward Ford-King</p>
 				<p>Associate - David Montgomery</p>
@@ -220,6 +227,7 @@ body {
 
 		<div class="contact parallax-layer">
 			<div class="parallax-section">
+				<a name="contact"><div class="anchor-spacer"></div></a>
 				<h2>Contact Us</h2>
 				<!--div class="map">
 					<iframe src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=15+regan+road+unit+11&amp;aq=&amp;sll=43.7010032,-79.8004514&amp;sspn=0.008419,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=15+Regan+Rd,+Brampton,+Peel+Regional+Municipality,+Ontario+L7A+1B2&amp;t=m&amp;ll=43.7010032,-79.8004514&amp;spn=0.008423,0.021136&amp;z=14&amp;iwloc=A&amp;output=embed" width="425" marginwidth="0" height="350" marginheight="0" scrolling="no" frameborder="0" class="map"></iframe>
