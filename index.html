@@ -7,19 +7,29 @@
 
 body {
 	font-family: Verdana, Geneva, sans-serif;
-	//font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	//background-image: url(images/Toronto_Skyline_at_dusk.gif);
 	//background-repeat: no-repeat;
 	color: #000000;
 	background-color: #DCE3ED;
 	width: 955px;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
 	margin-right: auto;
 	margin-left: auto;
-	overflow-y: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
 }
 
 .header {
-	position:absolute;
+	position: fixed;
 	top: 0px;
 	height: 173px;
 	width: 955px;
@@ -27,27 +37,18 @@ body {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
-	height: 50px;
+	height: 20px;
 	width: 955px;
 	z-index: 100;
 	background: #3498db;
 	color: #fff;
+	padding-top: 5px;
 }
 
-.main {
-	position:absolute;
-	top: 174px;
-	bottom: 50px;
-	width: 955px;
-	overflow: auto;
-}
-
-.main p {
-	font-size: 18px;
-	font-weight: normal;
-	text-align: left;
+.footer a {
+	color: #fff;
 }
 
 .footer-left {
@@ -55,6 +56,7 @@ body {
 	font-size: 10px;
 	float: left;
 	width: 150px;
+	padding-left: 10px;
 }
 
 .footer-center {
@@ -63,7 +65,7 @@ body {
 	font-weight: normal;
 	text-align: center;
 	float: left;
-	width: 655px;
+	width: 635px;
 }
 
 .footer-right {
@@ -71,6 +73,8 @@ body {
 	font-size: 10px;
 	width: 150px;
 	float: right;
+	text-align: right;
+	padding-right: 10px;
 }
 
 .menuitem {
@@ -84,18 +88,19 @@ body {
 .parallax {
 	perspective: 1px;
 	height: 99vh;
-	overflow-x: hidden;
-	overflow-y: auto;
 }
 
 .parallax-layer {
 	position: relative;
-	height: 150vh;
+	height: 100vh;
 }
 
 .parallax-section {
 	position: absolute;
-	//top: 200px;
+}
+
+.top-spacer {
+	height: 200px;
 }
 
 .anchor-spacer {
@@ -110,15 +115,12 @@ body {
   background-image: -ms-linear-gradient(top, #3498db, #2980b9);
   background-image: -o-linear-gradient(top, #3498db, #2980b9);
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  //-webkit-border-radius: 7;
-  //-moz-border-radius: 7;
-  //border-radius: 7px;
   font-family: Arial;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   margin: 0px 0px 10px 0px;
   text-decoration: none;
-  width: 149px;
+  width: 151px;
   text-align: center;
   display: block;
 }
@@ -152,6 +154,7 @@ body {
 	</div>
 
   <div class="parallax">
+
     <div class="home parallax-layer">
 			<div class="parallax-section">
 				<a name="home"><div class="anchor-spacer"></div></a>
